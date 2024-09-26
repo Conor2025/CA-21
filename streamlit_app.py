@@ -19,7 +19,7 @@ st.write(filtered_df)
 
 flg, ax = plt.subplots()
 ax.bar(filtered_df['Region'], filtered_df['Sales Amount'], color = 'skyblue')
-plt.title(f'Sales in {selected_year},)
+plt.title(f'Sales in {selected_year}')
 plt.xlabel('Region')
 plt.ylabel('Sales Amount')
 st.pyplot(fig)
