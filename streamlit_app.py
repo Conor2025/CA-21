@@ -17,7 +17,7 @@ st.write(f"Date for the year {selected_year}:")
 filtered_df = df[df['Year'] == selected_year]
 st.write(filtered_df)
 
-flg, ax = plt.subplots()
+fig, ax = plt.subplots()
 ax.bar(filtered_df['Region'], filtered_df['Sales Amount'], color = 'skyblue')
 plt.title(f'Sales in {selected_year}')
 plt.xlabel('Region')
